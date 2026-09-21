@@ -1985,6 +1985,94 @@ h3 {
         0;
 
 }
+/* =============================================
+   SCRATCH PROJECTS
+============================================= */
+
+.scratch-projects {
+    margin-top: 70px;
+}
+
+.scratch-heading {
+    max-width: 720px;
+    margin-bottom: 35px;
+}
+
+.scratch-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    margin-bottom: 15px;
+}
+
+.scratch-heading > p:last-child {
+    color: var(--gray);
+    font-size: 1.05rem;
+}
+
+.scratch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.scratch-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 28px;
+    background: var(--mint-light);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.scratch-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(40, 118, 95, 0.4);
+    box-shadow: 0 15px 35px rgba(20, 56, 47, 0.1);
+}
+
+.scratch-number {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: var(--green);
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.scratch-label {
+    display: block;
+    color: var(--green);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 5px;
+}
+
+.scratch-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.2rem;
+}
+
+.scratch-card p {
+    margin: 0;
+    color: var(--green);
+    font-size: 0.87rem;
+    font-weight: 700;
+}
+
+@media (max-width: 780px) {
+    .scratch-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* =============================================
@@ -2672,244 +2760,3 @@ footer {
 
 }
 
-/* =============================================
-   SCRATCH PROJECTS
-============================================= */
-
-
-.scratch-projects {
-
-    margin-top:
-        70px;
-
-}
-
-
-.scratch-heading {
-
-    max-width:
-        720px;
-
-    margin-bottom:
-        35px;
-
-}
-
-
-.scratch-heading h2 {
-
-    font-size:
-        clamp(
-            2rem,
-            4vw,
-            3.3rem
-        );
-
-    margin-bottom:
-        15px;
-
-}
-
-
-.scratch-heading > p:last-child {
-
-    color:
-        var(--gray);
-
-    font-size:
-        1.05rem;
-
-}
-
-
-.scratch-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap:
-        16px;
-
-}
-
-
-.scratch-card {
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    gap:
-        22px;
-
-    padding:
-        28px;
-
-    background:
-        var(--mint-light);
-
-    border:
-        1px solid var(--border);
-
-    border-radius:
-        20px;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
-
-}
-
-
-.scratch-card:hover {
-
-    transform:
-        translateY(-5px);
-
-    border-color:
-        rgba(40, 118, 95, 0.4);
-
-    box-shadow:
-        0 15px 35px
-        rgba(20, 56, 47, 0.1);
-
-}
-
-
-.scratch-number {
-
-    width:
-        58px;
-
-    height:
-        58px;
-
-    flex:
-        0 0 58px;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-
-    border-radius:
-        16px;
-
-    background:
-        var(--green);
-
-    color:
-        white;
-
-    font-family:
-        "Space Grotesk",
-        sans-serif;
-
-    font-weight:
-        700;
-
-    font-size:
-        1.05rem;
-
-}
-
-
-.scratch-label {
-
-    display:
-        block;
-
-    color:
-        var(--green);
-
-    font-size:
-        0.68rem;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        0.12em;
-
-    margin-bottom:
-        5px;
-
-}
-
-
-.scratch-card h3 {
-
-    margin:
-        0 0 6px;
-
-    font-size:
-        1.2rem;
-
-}
-
-
-.scratch-card p {
-
-    margin:
-        0;
-
-    color:
-        var(--green);
-
-    font-size:
-        0.87rem;
-
-    font-weight:
-        700;
-
-}
-
-
-/* Scratch projects on phones */
-
-@media (max-width: 780px) {
-
-    .scratch-grid {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-}
-
-
-@media (max-width: 520px) {
-
-    .scratch-card {
-
-        padding:
-            20px;
-
-        gap:
-            16px;
-
-    }
-
-
-    .scratch-number {
-
-        width:
-            48px;
-
-        height:
-            48px;
-
-        flex-basis:
-            48px;
-
-    }
-
-}
